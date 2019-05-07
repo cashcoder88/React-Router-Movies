@@ -35,7 +35,7 @@ export default class MovieList extends Component {
 function MovieDetails({ movie }) {
   const { title, director, metascore, stars } = movie;
   return (
-    <NavLink to={`/movies/${movie.id}`}> 
+    <NavLink exact to={`/movies/${movie.id}`}> 
       <h2>{title}</h2>
       <div className="movie-director">
         Director: <em>{director}</em>
